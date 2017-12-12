@@ -8,6 +8,7 @@ setTimeout ( () => {
 let precioFinal = this.precio * this.iva
 console.log(`
 Usando una función clásica:
+
 El precio final es ${precioFinal}
 `);
 }, 1000)
