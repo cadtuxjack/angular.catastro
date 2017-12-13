@@ -1,0 +1,114 @@
+v.g.: main.component.ts
+
+Component:
+- Selector
+- Template
+- Styles
+- Encapsulation
+- Animations
+
+b4-grid-default (crea estructura col row)
+
+ng g c (crear componente)
+se deja el constructor para inyectar las dependencia
+ngOninit (este es el importante, se genera de forma automática)
+ngOnDestroy
+
+Vistas:
+Se emplean plantillas
+Tan solo unos cinco operadores
+[] asignar variables a cualquier atributo
+() a cualquier evento se le asigna un método del componente
+{{}} se interpola una variable
+[()] 
+# declarar variables locales
+
+Evento:
+
+(click) = "++aDir"
+( ) = ""
+
+Respuesta del evento
+$event (se podría recoger en el manejador)
+
+Al envolver en [] se fija l propiedad no el atributo
+por eso [] se denomina operador de propiedades
+
+v.g.: div[id] = "sID"
+-------------------------------
+Nuevo Proyecto
+
+Crear vínculo simbólico del dir node_modules
+Si buscamos en carpeta veríamos referencias
+
+ng g c main/binding
+en main.component.ts ya puedo poner el <app-binding></app-binding>
+
+b4-card (se puede solucionar con header y footer)
+binding.component.ts ya podemos crear la lógica
+
+[value] --> [ngModel] --> pertenece a un módulo formulario
+Doble binding [()] con el ngModel bananainabox:
+De esta forma tenemos borrar para todo.
+
+Fijarse como toma los atributos, emplea []
+
+Es mejor importar los módulos desde el main, luego desde el resto de components es sencillo importarlo.
+@ViweChild decorador (lo usamos con la variable local)
+
+Encapsulación: None (admite desde fuera) Emulated (por defecto, los estilos no salen, pero si entran los estilos de Bootstrap)
+Encapsulando en un shadow DOM mantenemos los estilos
+
+Comunicaciones:
+Paso información (bajo), eventos (subo) = Resulta complicado, se usan los sevicios
+
+https://github.com/alce65/angular_catastro.git
+
+Directivas:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

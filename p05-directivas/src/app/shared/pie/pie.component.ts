@@ -10,7 +10,7 @@ export class PieComponent implements OnInit {
   sLugar: string;
   constructor() { }
   ngOnInit() {
-    this.sAutor = 'Diego';
+    this.sAutor = 'Diego Roibás';
     this.sLugar = 'Madrid';
   }
 }

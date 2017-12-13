@@ -1,0 +1,19 @@
+<div class="card col-6">
+  <div class="card-header">
+    Referencias Locales
+  </div>
+  <div class="card-body">
+    <div class="form-group">
+      <label for="nombre">Dime tu nombre</label>
+      <input type="text" #name
+        class="form-control" name="nombre" id="nombre"  placeholder="pon aquí tu nombre">
+    </div>
+    <button id="botonBorrar" class="btn btn-primary" 
+    (click)="name.value = ''">Borrar</button> 
+    <button id="botonSalvar" class="btn btn-primary" 
+    (click)="name.value = ''">Salvar</button>
+  </div>
+  <div class="card-footer text-muted">
+  
+  </div>
+</div>

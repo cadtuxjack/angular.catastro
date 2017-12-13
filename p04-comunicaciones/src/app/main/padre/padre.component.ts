@@ -1,9 +1,9 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 
 @Component({
-  selector: 'app-binding',
-  templateUrl: './binding.component.html',
-  styleUrls: ['./binding.component.css'],
+  selector: 'app-padre',
+  templateUrl: './padre.component.html',
+  styleUrls: ['./padre.component.css'],
   encapsulation: ViewEncapsulation.Emulated
 })
 export class BindingComponent implements OnInit {
@@ -11,10 +11,10 @@ export class BindingComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    this.sName = 'Pepe';
+    this.sName = '';
   }
-btnBorrar(oEv) {
-  console.log(oEv);
-  this.sName = null;
+eventoRespuesta(oEV) {
+
+  this.sName = oEV;
 }
 }
