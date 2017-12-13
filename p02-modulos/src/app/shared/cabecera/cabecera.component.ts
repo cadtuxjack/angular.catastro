@@ -8,8 +8,9 @@ import { Component, OnInit } from '@angular/core';
 export class CabeceraComponent implements OnInit {
 
   public sTitulo: string;
-  // tslint:disable-next-line:whitespace
-  constructor() {} /*Dejar solo para las dependencias*/
+ sLogo: string;
+
+  constructor() {}
 
   ngOnInit() {
     this.sTitulo = 'Módulos en Angular';
