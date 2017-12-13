@@ -1,0 +1,20 @@
+import { Component, OnInit } from '@angular/core';
+
+@Component({
+  selector: 'app-cabecera',
+  templateUrl: './cabecera.component.html',
+  styleUrls: ['./cabecera.component.css']
+})
+export class CabeceraComponent implements OnInit {
+
+  public sTitulo: string;
+ sLogo: string;
+
+  constructor() {}
+
+  ngOnInit() {
+    this.sTitulo = 'Componentes en Angular';
+    this.sLogo = '../../asset/logo_angular.svg';
+  }
+
+}

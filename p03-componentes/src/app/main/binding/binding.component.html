@@ -1,0 +1,20 @@
+<p>
+  binding works!
+</p>
+
+<div class="card col-6">
+  <div class="card-header">
+    Binding
+  </div>
+  <div class="card-body">
+    <div class="form-group">
+      <label for="nombre">Dime tu nombre</label>
+      <input type="text" [(ngModel)]="sName" 
+        class="form-control" name="nombre" id="nombre"  placeholder="pon aquí tu nombre">
+    </div>
+    <button id="botonBorrar" class="btn btn-primary" (click)="btnBorrar($event)">Borrar</button> 
+  </div>
+  <div class="card-footer text-muted">
+    Hola {{sName || "amigo"}}
+  </div>
+</div>
